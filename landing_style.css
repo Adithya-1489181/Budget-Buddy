@@ -1,0 +1,219 @@
+html, body {
+  margin: 0;
+  height: 100%; /* Ensure the body covers the full viewport height */
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-image: url('Images/Background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black color */
+  z-index: 1; /* Ensure the overlay is on top */
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+  position: relative;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+.left-section h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.left-section .highlight {
+  font-size: 4rem;
+  color: #f4a261;
+}
+
+.left-section p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.left-section .description {
+  font-size: 1.5em;
+  margin-left: 3em; /* Adjust this value to move the description to the right */
+  margin-right: 8em;
+}
+
+.right-section {
+  text-align: center;
+  margin-left: 300px; /* Adjust the value as needed */
+  margin-right: 5em;
+  margin-top: 5em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #e76f51;
+}
+
+.logo img {
+  width: 200px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+.overlapping-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.first-t {
+  font-size: 20em;
+  font-weight: bold;
+}
+
+.rest-of-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: -3em; /* Adjust this value to overlap the text */
+}
+
+.rest-of-text p {
+  font-size: 5em;
+  margin: 0;
+}
+.rest-of-text p:first-child {
+  margin-top: 0.8em; /* Adjust this value to move the first p down */
+}
+
+.rest-of-text p:last-child {
+  margin-top: 0.1em; /* Adjust this value to move the second p down */
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .right-section {
+    margin-left: 0;
+    margin-top: -0.2px;
+    margin-left: 7em;
+    width: 100%;
+  }
+
+  .left-section {
+    margin-left: -6.5em;
+    width: 100%;
+  }
+
+  .left-section p {
+    margin-right: -5em;
+    font-size: 1rem;
+  }
+
+  .left-section .description {
+    font-size: 1.1em;
+    margin-right: -7em;
+    margin-left: 2em; /* Adjust this value to move the description to the right */
+  }
+
+  .rest-of-text p {
+    font-size: 3em;
+  }
+
+  .first-t {
+    font-size: 10em;
+  }
+  .rest-of-text p:first-child {
+    margin-left: 0.45em;
+    margin-top: 0.6em; /* Adjust this value to move the first p down */
+  }
+  
+  .rest-of-text p:last-child {
+    margin-left: 0.45em;
+    margin-top: -0.2em; /* Adjust this value to move the second p down */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .right-section {
+    margin-left: 0;
+    margin-top: -0.2px;
+    margin-left: 7em;
+    width: 100%;
+  }
+
+  .left-section {
+    margin-left: -6.5em;
+    width: 100%;
+  }
+
+  .left-section p {
+    margin-right: -5em;
+    font-size: 1rem;
+  }
+
+  .left-section .description {
+    font-size: 1.1em;
+    margin-right: -7em;
+    margin-left: 2em; /* Adjust this value to move the description to the right */
+  }
+
+  .rest-of-text p {
+    font-size: 3em;
+  }
+
+  .first-t {
+    font-size: 10em;
+  }
+  .rest-of-text p:first-child {
+    margin-left: 0.45em;
+    margin-top: 0.6em; /* Adjust this value to move the first p down */
+  }
+  
+  .rest-of-text p:last-child {
+    margin-left: 0.45em;
+    margin-top: -0.2em; /* Adjust this value to move the second p down */
+  }
+}

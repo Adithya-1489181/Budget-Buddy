@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Budget Buddy</title>
-  <link rel="stylesheet" href="landing_style.css">
+  <link rel="stylesheet" href="landing_page.css">
+  <script src ="landing_page.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="landingScreen">
     <div class="left-section">
       <div class="overlapping-text">
         <span class="first-t">T</span>
@@ -27,12 +28,12 @@
         <img src="Images/Logo.png" alt="Budget Buddy Logo">
       </div>
       <h2>Budget Buddy</h2>
-      <button class="explore-button" onclick="explore()">Explore</button>
+      <button class="explore-button" onclick="showMainContent()">Explore</button>
     </div>
   </div>
-  <script>
-    function explore() {
-      alert("Explore Budget Buddy and manage your finances efficiently!");
-    }
-  </script>
+  <div id = "mainContent">
+    <nav id="navbar">
+        <h1>Hello World!!</h1>
+    </nav>
+  </div>
 </body>
